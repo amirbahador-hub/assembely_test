@@ -1,0 +1,33 @@
+text db "Heloo " , 10
+-------------------------
+db -> define bytes -> define some raw bytes of data (hello 10)
+10 -> \n
+text -> name assigned to the address in memory that this data is located
+===================
+registers are part of processor that temporarily holds memory
+x86-64 -> hold 64 bits
+=======================
+System call
+
+A system call or syscall is when a program requests a service from the kernel
+All Syscalls have Id
+syscalls also take arguments meaning list of inputs
+=========================================
+mov rdi, 0 -> there was no Error
+========================================
+Sections 
+.data -> defined data before
+.bss -> allocate memory for future
+.text -> where the actual code is
+========================================
+label
+label part of code
+
+__start
+where the program begins
+if linker caannot find _start it will throw an error
+
+====================
+global
+is used when you want the linker to be able to know the address of some a lable
+
